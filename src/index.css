@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-nastaliq: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  --font-serif: 'EB Garamond', 'Noto Serif', serif;
+  --font-display: 'Noto Serif', serif;
+  --font-sans: 'Manrope', system-ui, sans-serif;
+  
+  --color-primary-ink: #131E3A;
+  --color-primary-night: #0B1325;
+  --color-emerald-jade: #1B4D3E;
+  --color-gold-tazhib: #C5A059;
+  --color-gold-bright: #D4AF37;
+  --color-wasli: #FCF9F2;
+  --color-wasli-card: #F4EFE6;
+  --color-wasli-border: #E2D9C8;
+}
+
+/* Nastaliq vertical breathing room & metrics */
+.font-nastaliq {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  line-height: 2.3;
+}
+
+.font-nastaliq-tight {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  line-height: 1.85;
+}
+
+.font-nastaliq-relaxed {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  line-height: 2.65;
+}
+
+/* Delicate manuscript gold foil and border accents */
+.gold-leaf-border {
+  border: 1px solid #C5A059;
+  box-shadow: inset 0 0 0 1px rgba(197, 160, 89, 0.35);
+}
+
+.manuscript-card {
+  background-color: #F4EFE6;
+  border: 1px solid #E2D9C8;
+  box-shadow: 0 2px 8px -2px rgba(19, 30, 58, 0.05);
+}
+
+.dark .manuscript-card {
+  background-color: #111A30;
+  border: 1px solid #233152;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtle Wasli paper texture overlay */
+.wasli-paper-texture {
+  background-image: radial-gradient(rgba(197, 160, 89, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Audio waveform animated bars */
+@keyframes inkPulse {
+  0%, 100% { height: 6px; }
+  50% { height: 26px; }
+}
+
+.animate-ink-pulse {
+  animation: inkPulse 1.2s ease-in-out infinite;
+}

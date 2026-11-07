@@ -1,0 +1,6 @@
+{
+  "name": "Ganjina-e-Adab | گنجینۂ ادب",
+  "description": "An archival treasury of classical and contemporary Urdu literature with illuminated folios, Nastaliq typography, dewan reader, synchronized recitation audio player, and poetic meter explorer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
